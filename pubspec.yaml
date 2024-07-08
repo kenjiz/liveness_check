@@ -1,0 +1,26 @@
+name: aai_liveness_check
+description: "A plugin that simplifies the process of integrating the AAI Liveness Check SDK into a Flutter app."
+version: 1.0.0
+publish_to: "none"
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  crypto: ^3.0.2
+  dio: ^5.4.0
+  flutter:
+    sdk: flutter
+  liveness_plugin:
+    git:
+      url: git@github.com:nextbank-ph/flutter-libraries.git
+      path: ./liveness_plugin
+      ref: liveliness_plugin-v0.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
